@@ -26,7 +26,7 @@ h2{
 
 h4{
     font-family: 'Roboto', sans-serif;
-    font-size: 24px; 
+    font-size: 30px; 
     color: #5529ce; 
 }
 h5{
@@ -143,62 +143,59 @@ p{
  }
 /*------------------------------------------------------------------------------*/
 
- /*Imagen principal home*/
+ /*carrucel home*/
 
  .imagen-carrucel-home{
    width: auto;
-   max-height:  90vh;
+   max-height:  95vh;
    object-fit: cover;
  }
- .lugar-carrucel{
-  /*z-index: -2;*/
- }
+ 
 
 /*contenedor de texto*/
 
 .container-text-conocenos{
-   background : rgba(243, 207, 243, 0.3);
-   display: flex;
-   justify-content:space-between;
-   font-family: 'Roboto', sans-serif;
-   font-size: 150%;
-   padding: 7rem;
-   margin: 0 auto;
-   margin-bottom:0;
-   align-content: center;
-   align-items: center;
-   
-   
+    background: rgba(243, 207, 243, 0.3);
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 7rem;
+    margin: 0;
+    margin-bottom: 0;
+    align-content: center center;
+    align-items: center;
+    flex-direction: row;
 }
+ 
+
 .primer-parrafo-home{
   text-align: justify;
   text-decoration:none;
-  margin-left: 3rem;
-  width: 80%;
+  margin: 1rem;
+  width: 45%;
 }
+
 .titulo-primer-parrafo-home{
-  text-align:left;
+  text-align:end;
+  justify-content: right;
   text-decoration:none;
-  font-size: 100%;
-  margin-left: 3rem;
- 
-}
+  margin: 1rem;
+  width: 30%;
+ }
 
 /*---------------------------------------------------------------------------*/
 
  /*Imagenes Galeria home*/
  .titulo-galeria-home{
-
   display: flex;
   text-align:left;
   text-decoration:none;
   margin: 1rem;
   font-size: 48px;
-
  }
 
  .container-principal-galeria-home{
-   display: grid;
+  display: grid;
   min-height: 100vh; /* viewport height */
   grid-template-columns: 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr ;
@@ -212,15 +209,12 @@ p{
 }
 
 .boda{
-
   grid-area: boda;
   flex-grow: 1;
   width: 100%; 
   height: 100%;
   object-fit: cover;
-
 }
-
 
 .bautizo{
   grid-area: bautizo;
@@ -229,7 +223,6 @@ p{
   height: 100%;
   object-fit: cover;
 }
-
 
 .cumpleaños{
   grid-area: cumpleaños;
@@ -249,13 +242,14 @@ p{
 
 /*---------------------------------------------------------------------------*/
 /*galeria*/
+
 .titulo-galeria{
   text-align:center;
   text-decoration:none;
   font-size: 150%;
   margin-top: 5rem;
-
  }
+
  .container-galeria{
   display: flex;
   align-items: center;
@@ -265,8 +259,6 @@ p{
   margin:  auto;
   padding:10px;
   position:relative;
- 
-  
 }
 
 .container-galeria-left {
@@ -480,8 +472,6 @@ p{
  margin-right: 5rem;
  padding:2rem;
  position:relative;
-
- 
 }
 
 .Cards-perfiles{
@@ -496,7 +486,6 @@ p{
 
 
 .card-perfil{
-
   display: flex;
   align-items: center;
   border: 1px solid #f2edf8;
@@ -543,17 +532,12 @@ p{
   align-items: center center;
   justify-content: center;
   
-
 }
 
 .social-icon-perfil-img {
-
   margin-right:  8px; /* Separacion de los iconos social media */
 
 }
-
-
-
 
  /*-------------------------------------------------------------------------*/
 
@@ -565,11 +549,8 @@ p{
   margin-bottom: 0px;
   object-fit: cover;
   position:absolute;
-  z-index:1 ;
-
-
+  z-index:-10 ;
  }
-
 
  .background-image {
   position: absolute;
@@ -589,7 +570,6 @@ p{
   min-height: 100vh;
   margin: 0;
   padding: 0;
-
 }
  
  .container-formulario {
@@ -602,7 +582,6 @@ p{
   border-radius: 15px;
   justify-content: center;
   position:relative;
-  z-index: 3;
   margin-top:20%;
   background-color: rgba(255, 255, 255, 0.836);
 }
@@ -612,9 +591,7 @@ p{
   flex-direction: column;
   justify-content: center;
   margin-bottom: 50px;
- justify-content: center;
-
-
+  justify-content: center;
 }
 
 .titulo-parrafo-formulario{
@@ -624,8 +601,8 @@ p{
   border-radius: 4px;
   margin-bottom: 50px;
   font-family: 'Roboto', sans-serif;
-
 }
+
 .parrafo-formilario{
   display: flex;
   flex-wrap: wrap;
@@ -633,11 +610,12 @@ p{
   border-radius: 4px;
   margin-bottom: 50px;
   font-family: 'Roboto', sans-serif;
-
 }
+
 .columnas-formulario-parrafo{
   width: 100%;
 }
+
 form {
   display: flex;
   flex-wrap: wrap;
@@ -648,7 +626,7 @@ form {
 }
 
 .columnas-formulario {
-  width: 45%;
+  width: 60%;
 }
 
 .columnas-formulario-mensaje {
@@ -660,7 +638,6 @@ label {
   font-family: 'Roboto', sans-serif;
   font-weight: 0;
   font-size: small;
-  
 }
 
 input, select
@@ -673,6 +650,9 @@ input, select
   font-family: 'Roboto', sans-serif;
 }
 
+.colo-border{
+  background-color: #715d8b; 
+}
 textarea{
   padding: 10px;
   margin-bottom: 20px;
@@ -692,10 +672,65 @@ button[type="submit"] {
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   width: 100%;
- 
 }
   
   
 button[type="submit"]:hover {
   background-color: #3b0c79;
   }
+
+  /**********************************************/
+  /*Parrafo home*/
+  @media (min-width: 0px) and (max-width: 991.98px) { 
+    .container-text-conocenos{
+    background: rgba(243, 207, 243, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+    padding: 4rem;
+    margin: 0 auto;
+    margin-bottom: 0;
+    align-content: stretch;
+    flex-direction: column;
+    align-items: baseline;
+   } 
+   .primer-parrafo-home {
+    text-align: justify;
+    text-decoration: none;
+    margin: 1rem 1rem 1rem 1rem;
+    width: 80%;
+  }
+  .titulo-primer-parrafo-home{
+  text-align:start;
+  justify-content: right;
+  text-decoration:none;
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: 40%;
+  width: 30%;
+  }
+  }
+
+  /*Parrafo galeria Home*/
+
+  @media (min-width: 0px) and (max-width: 991.98px) { 
+  
+ .container-principal-galeria-home{
+  display: grid;
+  min-height: 100vh; /* viewport height */
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-areas: 
+  "baby baby baby baby"
+  "boda boda boda boda"
+  "boda boda boda boda"
+  "bautizo bautizo bautizo bautizo"
+  "cumpleaños cumpleaños cumpleaños cumpleaños"
+  "cumpleaños cumpleaños cumpleaños cumpleaños";
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+}
+  
