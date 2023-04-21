@@ -59,26 +59,28 @@
         <!--Imagen principal contacto-->
         <div class="background-image"> </div>
         <!--formulario contacto-->
-        <div class="container-principal-fomulario">
-            <div class="container-formulario">
-                <div class="container-textos-formulario columnas-formulario-parrafo">
-                    <h1 class="titulo-parrafo-formulario columnas-formulario-parrafo">Pongase en contacto hoy</h1>
-                    <p class="parrafo-formilario">Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
-                        dolorol egestas morbi sem
-                        vulputate etiam facilisis pellentesque ut quis</p>
-                </div>
+              <div class="container-principal-fomulario">
+                <div class="container-formulario">   
                 <form form class="row g-2 border-1 border-secondary">
+                  <div class="col-md-12 w-75 m-0 align-content-center">
+                    <h1>Pongase en contacto hoy</h1>
+                  </div>
+                  <div class="col-md-12 w-75 m-0 align-content-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+                      dolorol egestas morbi sem
+                      vulputate etiam facilisis pellentesque ut quis</p>
+                  </div>
                  
-                        <div class="col-md-6">
+                        <div class="col-md-12 w-75 m-0">
                             <label for="nombre" class="form-label">Nombre:</label>
                             <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
                         </div>
-                        <div class="col-md-6 w-25">
+                        <div class="col-md-12 w-75 m-0">
                             <label for="telefono" class="form-label" >Teléfono:</label>
                             <input class="form-control" type="number" id="telefono" name="telefono" placeholder="Escribe tu numero de telefono"
                                 required>
                         </div>
-                        <div class="col-md-12 w-75">
+                        <div class="col-md-12 w-75 m-0">
 
                             <label for="email" class="form-label">Email:</label>
                             <input class="form-control" type="email" id="email" name="email" placeholder="Escribe tu email" required>
@@ -86,7 +88,7 @@
                         </div>
                         <div class="col-md-12 w-75">
                             <label for="servicio"class="form-label">Servicio:</label>
-                            <select class="form-select" id="servicio" name="servicio" required>
+                            <select onchange="this.classList.toggle('border-0', !this.value)" id="servicio" name="servicio" required>
                             <option value="" disabled selected hidden>Selecciona una opcion</option>
                             <option value="opcion1">Boda</option>
                             <option value="opcion2">Bautizo</option>
