@@ -112,7 +112,6 @@ p{
 .color-backgroud-footer{
   background : rgba(205, 197, 211, 0.7);
 }
-
  .nav li.nav-item a.nav-link{
   display: inline-block;
   font-family: 'Roboto', sans-serif;
@@ -151,7 +150,6 @@ p{
    object-fit: cover;
  }
  
-
 /*contenedor de texto*/
 
 .container-text-conocenos{
@@ -167,7 +165,6 @@ p{
     flex-direction: row;
 }
  
-
 .primer-parrafo-home{
   text-align: justify;
   text-decoration:none;
@@ -321,7 +318,6 @@ p{
   text-decoration:none;
   font-size: 150%;
   margin-top: 5rem;
-
  }
 
  .titulo-producto{
@@ -329,7 +325,6 @@ p{
   text-decoration:none;
   font-size: 150%;
   margin-top: -1rem;
-
  }
 
 .container-servicios{
@@ -342,8 +337,6 @@ p{
  margin:  auto;
  padding:10px;
  position:relative;
-
- 
 }
 
 .Cards-Servicios{
@@ -542,15 +535,6 @@ p{
  /*-------------------------------------------------------------------------*/
 
  /*contacto*/
- .imagen-contacto{
-  Width:50%;
-  Height:100%;
-  top:0;
-  margin-bottom: 0px;
-  object-fit: cover;
-  position:absolute;
-  z-index:-10 ;
- }
 
  .background-image {
   position: absolute;
@@ -585,17 +569,6 @@ p{
   padding: 2rem;
   background-color: rgba(255, 255, 255, 0.836);
 }
-
-.parrafo-formilario{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center center;
-  border-radius: 4px;
-  font-family: 'Roboto', sans-serif;
-}
-
-
 
 form {
   display: flex;
@@ -665,7 +638,6 @@ button[type="submit"] {
   font-family: 'Roboto', sans-serif;
   width: 100%;
 }
-  
   
 button[type="submit"]:hover {
   background-color: #3b0c79;
