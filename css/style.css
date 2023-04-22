@@ -427,6 +427,7 @@ p{
   margin-left: 3rem;
 
 }
+
 .titulo-primer-parrafo-nosotros{
   text-align:left;
   text-decoration:none;
@@ -540,6 +541,14 @@ p{
   margin-right:  8px; /* Separacion de los iconos social media */
 
 }
+
+.social-icon-perfil-img:hover{
+  padding:2px;
+  background: #715d8b;
+  border-radius: 90%;
+
+}
+
 
  /*-------------------------------------------------------------------------*/
 
