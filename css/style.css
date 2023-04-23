@@ -198,8 +198,8 @@ p{
   grid-template-rows: 1fr 1fr ;
   grid-template-areas: 
   "boda boda baby baby"
-  "boda boda cumpleaños cumpleaños"
-  "bautizo bautizo cumpleaños cumpleaños";
+  "boda boda cumpleanos cumpleanos"
+  "bautizo bautizo cumpleanos cumpleanos";
   gap: 1rem;
   margin-bottom: 1rem;
   margin: 2rem 2rem 2rem 2rem;
@@ -221,8 +221,8 @@ p{
   object-fit: cover;
 }
 
-.cumpleaños{
-  grid-area: cumpleaños;
+.cumpleanos{
+  grid-area: cumpleanos;
   flex-grow: 1;
   width: 100%; 
   height: 100%;
@@ -241,76 +241,167 @@ p{
 /*galeria*/
 
 .titulo-galeria{
-  text-align:center;
-  text-decoration:none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
   font-size: 150%;
-  margin-top: 5rem;
+  width: 100%;
+  padding-top: 4rem;
+  position: relative;
+  flex-direction: column;
  }
 
  .container-galeria{
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction:row;
-  justify-content:space-evenly;
-  margin:  auto;
-  padding:10px;
-  position:relative;
+  display: grid;
+  min-height: 100vh; /* viewport height */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr  ;
+  grid-template-areas: 
+  "foto1 foto2 foto3"
+  "foto4 foto2 foto6"
+  "foto4 foto5 foto6"
+  "foto7 foto5 foto8";
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin: 2rem 2rem 2rem 2rem
 }
 
-.container-galeria-left {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: column;
-  justify-content: flex-start;
-
-}
-
-.container-galeria-right {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-
-.big-photos-container {
-  display: flex;
+.foto1{
+  grid-area: foto1;
   flex-grow: 1;
-}
-
-.left-align {
-  justify-content: flex-start;
-}
-
-.right-align {
-  justify-content: flex-end;
-}
-
-.big-photos-container img {
-  Width:584.09px;
-  Height:691.01px;
-  top:auto;
-  margin-bottom: 8px;
+  width: 100%; 
+  height: 100%; 
   object-fit: cover;
 }
-
-.small-photos-container {
-  display: flex;
-  flex-shrink: 1;
-  flex-basis: 50%;
-  justify-content: space-between;
-}
-
-.small-photos-container img {
-  Width:584.09px;
-  Height:326.31px;
-  top:auto;
-  margin-bottom: 8px;
+.foto2{
+  grid-area: foto2;
+  flex-grow: 1;
+  width: 100%; 
+  height: 100%;
   object-fit: cover;
 }
+.foto3{
+  grid-area: foto3;
+  flex-grow: 1;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+.foto4{
+  grid-area: foto4;
+  flex-grow: 1;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+.foto5{
+  grid-area: foto5;
+  flex-grow: 1;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+.foto6{
+  grid-area: foto6;
+  flex-grow: 1;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+.foto7{
+  grid-area: foto7;
+  flex-grow: 1;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+.foto8{
+  grid-area: foto8;
+  flex-grow: 1;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+/*---------------------------------------------------------------------------*/
+/*modal*/
+.my-img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.my-img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Oculto por defecto*/
+  position: fixed; /*Posicion Fija*/
+  z-index: 3; /* lugar por encima*/
+  padding-top: 10rem; /* localizacion de la caja */
+  left: 0;
+  top: 0;
+  width: 100%; /*  full ancho */
+  height: 100%; /* Full alto */
+  overflow: auto; /* habilita el scroll si lo amerita*/
+  background-color: rgb(219, 163, 221); /* full color */
+  background-color: rgba(219,163,221,0.9); /*opacidad del color */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 3rem;
+  right: 7rem;
+  padding: 2rem;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /*-------------------------------------------------------------------------*/
 /*servicios*/
 .titulo-servicio{
@@ -695,7 +786,7 @@ button[type="submit"]:hover {
   }
   }
 
-  /*Parrafo galeria Home*/
+  /*galerias Home - galeria general*/
 
   @media (min-width: 0px) and (max-width: 991.98px) { 
   
@@ -709,15 +800,50 @@ button[type="submit"]:hover {
   "boda boda boda boda"
   "boda boda boda boda"
   "bautizo bautizo bautizo bautizo"
-  "cumpleaños cumpleaños cumpleaños cumpleaños"
-  "cumpleaños cumpleaños cumpleaños cumpleaños";
+  "cumpleanos cumpleanos cumpleanos cumpleanos"
+  "cumpleanos cumpleanos cumpleanos cumpleanos";
   gap: 1rem;
   margin-bottom: 1rem;
   margin: 1rem 1rem 1rem 1rem;
 }
-
+.container-galeria{
+  display: grid;
+  min-height: 100vh; /* viewport height */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr  ;
+  grid-template-areas: 
+  "foto1 foto1 foto1"
+  "foto2 foto2 foto2"
+  "foto3 foto3 foto3"
+  "foto4 foto4 foto4"
+  "foto5 foto5 foto5"
+  "foto6 foto6 foto6"
+  "foto7 foto7 foto7"
+  "foto7 foto7 foto7"
+  "foto8 foto8 foto8";
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin: 2rem 2rem 2rem 2rem
 }
-  
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 90%;
+  }
+  .close {
+    position: absolute;
+    top: 5rem;
+    right: 1px;
+    padding: 1rem;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+}
+
+/*formulario*/
 @media (min-width: 0px) and (max-width: 991.98px) {
 .container-formulario {
     display: flex;
@@ -760,8 +886,8 @@ p{
   text-decoration:none;
   border:0;
 }
-
 } 
+
 @media (min-width: 0px) and (max-width:1000px){
   .Cards-perfiles {
     display: flex;
@@ -784,5 +910,4 @@ p{
     padding:2rem;
     position:relative;
    }
-
 }
