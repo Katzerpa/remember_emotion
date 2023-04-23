@@ -411,42 +411,42 @@ p{
   display: flex;
   justify-content:space-between;
   font-family: 'Roboto', sans-serif;
-  font-size: 150%;
-  padding: 20px;
+  font-size: 100%;
   align-items: center;
-  align-content: center;
+  align-content: center center;
   margin: 0 auto;
   margin-bottom:0;
-  margin-top: 5rem;
-  width: 90%;
+  padding: 1rem;
+  width: 70%;
+  min-height: 30vh;
+  padding-top: 8rem;
+  flex-direction: column;
 }
 
 .primer-parrafo-nosotros{
-  text-align: justify;
+  text-align:justify;
   text-decoration:none;
-  margin-left: 3rem;
+  padding: 1rem;
 
 }
 
 .titulo-primer-parrafo-nosotros{
-  text-align:left;
+  text-align:center;
   text-decoration:none;
   font-size: 100%;
-  margin: 3rem auto;
+  margin:auto;
 }
 
 .container-segundo-text-nosotros{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content:center center;
   font-family: 'Roboto', sans-serif;
-  font-size: 150%;
+  font-size: 100%;
   padding: 20px;
   align-items: center;
-  align-content: center;
+  align-content: center center;
   margin: 0 auto;
-  margin-bottom:0;
   width: 90%;
 }
 
@@ -454,14 +454,16 @@ p{
 .segundo-parrafo-nosotros{
   text-align: justify;
   text-decoration:none;
-  margin-left: 3rem;
+  padding: 1rem;
+  margin: auto;
 }
 
 .titulo-segundo-parrafo-nosotros{
   text-align:center;
   text-decoration:none;
   font-size: 100%;
-  margin: 3rem auto;
+  padding: 1rem;
+  margin: auto;
 }
 
 .container-perfiles{
@@ -732,12 +734,12 @@ button[type="submit"]:hover {
 }
 h1{
    font-family: 'Roboto', sans-serif;
-   font-size: 90%; 
+   font-size: 24px; 
    color: #c76ea9;
 }
 p{
   font-family: 'Roboto', sans-serif;
-   font-size: 90%; 
+   font-size: 100%; 
 }
 }
 /*card de servicios*/
@@ -760,3 +762,27 @@ p{
 }
 
 } 
+@media (min-width: 0px) and (max-width:1000px){
+  .Cards-perfiles {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+    padding: 1rem;
+    margin: auto;
+    flex-direction: column;
+  }
+  .container-perfiles{
+    display: flex;
+    align-items: center;
+    align-content: center center;
+    flex-wrap: rapw;
+    flex-direction:column-reverse;
+    justify-content:space-evenly;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    padding:2rem;
+    position:relative;
+   }
+
+}
