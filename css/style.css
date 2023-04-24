@@ -1,10 +1,10 @@
-
 /*reseteo margenes*/
 * {
-   Margin:0;
-   padding:0;
-   box-sizing: border-box;
+  Margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 @import url(https://fonts.googleapis.com);
 @import url(https://fonts.gstatic.com);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
@@ -12,29 +12,31 @@
 
 /*------------------------------------------------------------------------------*/
 /*Tamaño letras*/
-h1{
-   font-family: 'Roboto', sans-serif;
-   font-size: 48px; 
-   color: #c76ea9;
-}
-
-h2{
+h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px; 
+  font-size: 48px;
   color: #c76ea9;
 }
 
-h4{
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px; 
-    color: #5529ce; 
-}
-h5{
+h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 32px; 
-  color: #fff; 
+  font-size: 16px;
+  color: #c76ea9;
 }
-p{
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #5529ce;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  color: #fff;
+}
+
+p {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-size: medium;
@@ -46,43 +48,47 @@ p{
 
 
 .header_Container {
-    background: rgba(243, 207, 243, 0.7);
-    width: 100%;
-    position:fixed;
-    display:  flow-root;
-    z-index: 3;   
+  background: rgba(243, 207, 243, 0.7);
+  width: 100%;
+  position: fixed;
+  display: flow-root;
+  z-index: 3;
 }
 
-.color-menu-galeria{
+.color-menu-galeria {
   background: rgba(243, 207, 243, 0.7);
 
 }
-.contenedor-logo-nav{
-   display:flex;
-   width: 200px;
-   margin-left: 3rem;
+
+.contenedor-logo-nav {
+  display: flex;
+  width: 200px;
+  margin-left: 3rem;
 }
 
-  
-.navbar-nav .nav-item .nav-link{
-   display: inline-block;
-   font-family: 'Roboto', sans-serif;
-   font-size: 24px;
-   padding: 2rem;
-   margin: 0 auto;
-   color: #856dae;
-   }
 
- .navbar .navbar-nav .nav-item:hover{
-  background-color: #dfa0db; /* Cambiar el color de fondo al hacer "hover" */
- 
+.navbar-nav .nav-item .nav-link {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  padding: 2rem;
+  margin: 0 auto;
+  color: #856dae;
 }
 
-.navbar ul.navbar-nav .nav-item a.nav-link:hover{
-  color: #fff; /* Cambiar el color de texto al hacer "hover" */
- 
+.navbar .navbar-nav .nav-item:hover {
+  background-color: #dfa0db;
+  /* Cambiar el color de fondo al hacer "hover" */
+
 }
-.dropdown-menu .dropdown-item{
+
+.navbar ul.navbar-nav .nav-item a.nav-link:hover {
+  color: #fff;
+  /* Cambiar el color de texto al hacer "hover" */
+
+}
+
+.dropdown-menu .dropdown-item {
   display: inline-block;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
@@ -90,136 +96,143 @@ p{
   margin: 0 auto;
   color: #856dae;
 
-  }
-  .dropdown-menu .dropdown-item:hover{
-    background-color: #dfa0db; /* Cambiar el color de fondo al hacer "hover" */
-    color: #fff; /* Cambiar el color de texto al hacer "hover" */
-  }
-  
- 
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #dfa0db;
+  /* Cambiar el color de fondo al hacer "hover" */
+  color: #fff;
+  /* Cambiar el color de texto al hacer "hover" */
+}
+
+
 
 /*---------------------------------------------------------------------------*/
 
 /* Footer Barra de Navegacion */
 
-.color-backgroud-footer{
-  background : rgba(205, 197, 211, 0.7);
+.color-backgroud-footer {
+  background: rgba(205, 197, 211, 0.7);
 }
- .nav li.nav-item a.nav-link{
+
+.nav li.nav-item a.nav-link {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: #fff;
 }
+
 .nav li.nav-item a.nav-link:hover {
-    padding: 1rem;
-    background: #715d8b;
-  }
+  padding: 1rem;
+  background: #715d8b;
+}
 
 
 /*logo footer*/
 
 .logo-container-footer {
-   flex-grow: 1;
+  flex-grow: 1;
 
 }
 
- /*Copy ring*/
- .copy-right {
-   display: block;
-   font-size: 14px;
- }
+/*Copy ring*/
+.copy-right {
+  display: block;
+  font-size: 14px;
+}
+
 /*------------------------------------------------------------------------------*/
 
- /*carrucel home*/
+/*carrucel home*/
 
- .imagen-carrucel-home{
-   width: auto;
-   max-height:  95vh;
-   object-fit: cover;
- }
- 
+.imagen-carrucel-home {
+  width: auto;
+  max-height: 95vh;
+  object-fit: cover;
+}
+
 /*contenedor de texto*/
 
-.container-text-conocenos{
-    background: rgba(243, 207, 243, 0.3);
-    display: flex;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    padding: 7rem;
-    margin: 0;
-    margin-bottom: 0;
-    align-items: center;
-    flex-direction: row;
+.container-text-conocenos {
+  background: rgba(243, 207, 243, 0.3);
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 7rem;
+  margin: 0;
+  margin-bottom: 0;
+  align-items: center;
+  flex-direction: row;
 }
- 
-.primer-parrafo-home{
+
+.primer-parrafo-home {
   text-align: justify;
-  text-decoration:none;
+  text-decoration: none;
   margin: 1rem;
   width: 45%;
 }
 
-.titulo-primer-parrafo-home{
-  text-align:end;
+.titulo-primer-parrafo-home {
+  text-align: end;
   justify-content: right;
-  text-decoration:none;
+  text-decoration: none;
   margin: 1rem;
   width: 30%;
- }
+}
 
 /*---------------------------------------------------------------------------*/
 
- /*Imagenes Galeria home*/
- .titulo-galeria-home{
+/*Imagenes Galeria home*/
+.titulo-galeria-home {
   display: flex;
-  text-align:left;
-  text-decoration:none;
+  text-align: left;
+  text-decoration: none;
   margin: 1rem;
   font-size: 48px;
- }
+}
 
- .container-principal-galeria-home{
+.container-principal-galeria-home {
   display: grid;
-  min-height: 100vh; /* viewport height */
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr ;
-  grid-template-areas: 
-  "boda boda baby baby"
-  "boda boda cumpleanos cumpleanos"
-  "bautizo bautizo cumpleanos cumpleanos";
+  min-height: 100vh;
+  /* viewport height */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "boda boda baby baby"
+    "boda boda cumpleanos cumpleanos"
+    "bautizo bautizo cumpleanos cumpleanos";
   gap: 1rem;
   margin-bottom: 1rem;
   margin: 2rem 2rem 2rem 2rem;
 }
 
-.boda{
+.boda {
   grid-area: boda;
   flex-grow: 1;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.bautizo{
+.bautizo {
   grid-area: bautizo;
   flex-grow: 1;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.cumpleanos{
+.cumpleanos {
   grid-area: cumpleanos;
   flex-grow: 1;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.baby{
+.baby {
   grid-area: baby;
   flex-grow: 1;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -227,7 +240,7 @@ p{
 /*---------------------------------------------------------------------------*/
 /*galeria*/
 
-.titulo-galeria{
+.titulo-galeria {
   display: flex;
   text-align: center;
   align-items: center;
@@ -237,79 +250,88 @@ p{
   padding-top: 4rem;
   position: relative;
   flex-direction: column;
- }
+}
 
- .container-galeria{
+.container-galeria {
   display: grid;
-  min-height: 100vh; /* viewport height */
+  min-height: 100vh;
+  /* viewport height */
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr 2fr 2fr  ;
-  grid-template-areas: 
-  "foto1 foto2 foto3"
-  "foto4 foto2 foto6"
-  "foto4 foto5 foto6"
-  "foto7 foto5 foto8";
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-areas:
+    "foto1 foto2 foto3"
+    "foto4 foto2 foto6"
+    "foto4 foto5 foto6"
+    "foto7 foto5 foto8";
   gap: 1rem;
   margin-bottom: 1rem;
   margin: 2rem 2rem 2rem 2rem
 }
 
-.foto1{
+.foto1 {
   grid-area: foto1;
   flex-grow: 1;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-.foto2{
+
+.foto2 {
   grid-area: foto2;
   flex-grow: 1;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.foto3{
+
+.foto3 {
   grid-area: foto3;
   flex-grow: 1;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.foto4{
+
+.foto4 {
   grid-area: foto4;
   flex-grow: 1;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.foto5{
+
+.foto5 {
   grid-area: foto5;
   flex-grow: 1;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.foto6{
+
+.foto6 {
   grid-area: foto6;
   flex-grow: 1;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.foto7{
+
+.foto7 {
   grid-area: foto7;
   flex-grow: 1;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.foto8{
+
+.foto8 {
   grid-area: foto8;
   flex-grow: 1;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 /*---------------------------------------------------------------------------*/
 /*modal*/
 .my-img {
@@ -317,21 +339,32 @@ p{
   transition: 0.3s;
 }
 
-.my-img:hover {opacity: 0.7;}
+.my-img:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Oculto por defecto*/
-  position: fixed; /*Posicion Fija*/
-  z-index: 3; /* lugar por encima*/
-  padding-top: 10rem; /* localizacion de la caja */
+  display: none;
+  /* Oculto por defecto*/
+  position: fixed;
+  /*Posicion Fija*/
+  z-index: 3;
+  /* lugar por encima*/
+  padding-top: 10rem;
+  /* localizacion de la caja */
   left: 0;
   top: 0;
-  width: 100%; /*  full ancho */
-  height: 100%; /* Full alto */
-  overflow: auto; /* habilita el scroll si lo amerita*/
-  background-color: rgb(219, 163, 221); /* full color */
-  background-color: rgba(219,163,221,0.9); /*opacidad del color */
+  width: 100%;
+  /*  full ancho */
+  height: 100%;
+  /* Full alto */
+  overflow: auto;
+  /* habilita el scroll si lo amerita*/
+  background-color: rgb(219, 163, 221);
+  /* full color */
+  background-color: rgba(219, 163, 221, 0.9);
+  /*opacidad del color */
 }
 
 /* Modal Content (image) */
@@ -353,7 +386,8 @@ p{
 }
 
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content,
+#caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -361,13 +395,23 @@ p{
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 /* The Close Button */
@@ -391,70 +435,73 @@ p{
 
 /*-------------------------------------------------------------------------*/
 /*servicios*/
-.titulo-servicio{
-  text-align:center;
-  text-decoration:none;
+.titulo-servicio {
+  text-align: center;
+  text-decoration: none;
   font-size: 150%;
   margin-top: 5rem;
   padding: 2rem;
- }
+}
 
- .titulo-producto{
-  text-align:center;
-  text-decoration:none;
+.titulo-producto {
+  text-align: center;
+  text-decoration: none;
   font-size: 150%;
   padding: 2rem;
   margin-top: -1rem;
- }
-
-.container-servicios{
- display: flex;
- align-items: stretch;
- flex-wrap: wrap;
- flex-direction:column;
- justify-content:space-evenly;
- margin:  auto;
- padding:1rem;
- width: 90%;
- position:relative;
 }
 
-.Cards-Servicios{
+.container-servicios {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 1rem;
+  width: 90%;
+  position: relative;
+}
+
+.Cards-Servicios {
   display: flex;
   gap: 1rem;
   align-items: center;
   width: 100%;
 
 }
-.card-fotografos{
+
+.card-fotografos {
   flex-direction: column;
   align-items: center center;
   border: 1px solid #f2edf8;
   border-radius: 15px;
   justify-content: center;
-  margin-bottom:  3rem;
+  margin-bottom: 3rem;
   padding-bottom: 3rem;
   background-color: rgba(255, 255, 255, 0.836);
-  width: 100% ;
+  width: 100%;
   align-content: center;
 }
 
 .card-fotografos h2 {
   text-align: center;
 }
-.card-fotografos img{
+
+.card-fotografos img {
   width: 100%;
-  margin-bottom:  auto;
+  margin-bottom: auto;
   padding: 1rem;
   border-radius: 2rem;
-  
+
 }
 
-.card-fotografos p{
-  text-align:center;
+.card-fotografos p {
+  text-align: center;
   align-items: center center;
-  margin: 1rem 2rem; ;
-  
+  margin: 1rem 2rem;
+  ;
+
 }
 
 .btn {
@@ -473,25 +520,26 @@ p{
 
 .btn:hover {
   color: #c76ea9;
-  text-decoration:none;
+  text-decoration: none;
 }
+
 .btn:hover {
   color: #c76ea9;
-  text-decoration:none;
-  border:0;
+  text-decoration: none;
+  border: 0;
 }
 
 /*-------------------------------------------------------------------------*/
 /*Sobre Nosotros*/
 
-.container-text-nosotros{
+.container-text-nosotros {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
   align-items: center;
   margin: 0 auto;
-  margin-bottom:0;
+  margin-bottom: 0;
   padding: 1rem;
   width: 70%;
   min-height: 30vh;
@@ -499,21 +547,21 @@ p{
   flex-direction: column;
 }
 
-.primer-parrafo-nosotros{
-  text-align:justify;
-  text-decoration:none;
+.primer-parrafo-nosotros {
+  text-align: justify;
+  text-decoration: none;
   padding: 1rem;
 
 }
 
-.titulo-primer-parrafo-nosotros{
-  text-align:center;
-  text-decoration:none;
+.titulo-primer-parrafo-nosotros {
+  text-align: center;
+  text-decoration: none;
   font-size: 100%;
-  margin:auto;
+  margin: auto;
 }
 
-.container-segundo-text-nosotros{
+.container-segundo-text-nosotros {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -526,33 +574,33 @@ p{
 }
 
 
-.segundo-parrafo-nosotros{
+.segundo-parrafo-nosotros {
   text-align: justify;
-  text-decoration:none;
+  text-decoration: none;
   padding: 1rem;
   margin: auto;
 }
 
-.titulo-segundo-parrafo-nosotros{
-  text-align:center;
-  text-decoration:none;
+.titulo-segundo-parrafo-nosotros {
+  text-align: center;
+  text-decoration: none;
   font-size: 100%;
   padding: 1rem;
   margin: auto;
 }
 
-.container-perfiles{
- display: flex;
- align-items: center;
- flex-direction:column-reverse;
- justify-content:space-evenly;
- margin-left: 5rem;
- margin-right: 5rem;
- padding:2rem;
- position:relative;
+.container-perfiles {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 2rem;
+  position: relative;
 }
 
-.Cards-perfiles{
+.Cards-perfiles {
   display: flex;
   align-items: center;
   width: 90%;
@@ -562,7 +610,7 @@ p{
 }
 
 
-.card-perfil{
+.card-perfil {
   display: flex;
   align-items: center;
   border: 1px solid #f2edf8;
@@ -584,49 +632,53 @@ p{
 .card-perfil h3 {
   text-align: center;
 }
-.card-perfil-img{
+
+.card-perfil-img {
   width: 140px;
-  height: 140px; ;
+  height: 140px;
+  ;
   object-fit: cover;
   border-radius: 50%;
-  text-align:center;
+  text-align: center;
   align-items: center center;
   justify-content: center;
-  
+
 }
 
-.card-perfil p{
-  text-align:center;
+.card-perfil p {
+  text-align: center;
   align-items: center center;
-  margin: 1rem 2rem; ;
-  
+  margin: 1rem 2rem;
+  ;
+
 }
 
 .social-icons-perfil {
-  display:flex;
-  text-align:center;
+  display: flex;
+  text-align: center;
   justify-content: center;
-  
+
 }
 
 .social-icon-perfil-img {
-  margin-right:  8px; /* Separacion de los iconos social media */
+  margin-right: 8px;
+  /* Separacion de los iconos social media */
 
 }
 
-.social-icon-perfil-img:hover{
-  padding:2px;
+.social-icon-perfil-img:hover {
+  padding: 2px;
   background: #715d8b;
   border-radius: 90%;
 
 }
 
 
- /*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
 
- /*contacto*/
+/*contacto*/
 
- .background-image {
+.background-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -638,24 +690,24 @@ p{
   z-index: -1;
 }
 
-.container-principal-fomulario{
+.container-principal-fomulario {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: auto;
-  padding:2rem;
+  padding: 2rem;
   padding-top: 7rem;
   padding-bottom: 4rem;
 }
- 
- .container-formulario {
+
+.container-formulario {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   border: 1px solid #b2a3c5;
   border-radius: 15px;
   justify-content: center;
-  position:relative;
+  position: relative;
   width: 50%;
   margin: auto;
   padding: 2rem;
@@ -677,17 +729,17 @@ label {
   font-size: small;
 }
 
-input, select
- {
+input,
+select {
   padding: 1rem;
   margin-bottom: 1rem;
-  border:0.5px solid #ccc;
+  border: 0.5px solid #ccc;
   border-radius: 4px;
   width: 100%;
   font-family: 'Roboto', sans-serif;
 }
 
-textarea{
+textarea {
   padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
@@ -701,6 +753,7 @@ textarea{
   color: black;
   border-color: #715d8b;
 }
+
 .form-control:focus {
   box-shadow: 0 0 0 .10rem #715d8b;
 }
@@ -711,7 +764,7 @@ select:hover {
   border-color: #715d8b;
 }
 
-select:focus{
+select:focus {
   box-shadow: 0 0 0 .10rem #715d8b;
   border-color: #715d8b;
 }
@@ -722,21 +775,21 @@ button[type="submit"] {
   margin-bottom: 2rem;
   background-color: #715d8b;
   color: white;
-  border:0;
+  border: 0;
   border-radius: 4px;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   width: 100%;
 }
-  
+
 button[type="submit"]:hover {
   background-color: #3b0c79;
-  }
+}
 
-  /**********************************************/
-  /*Parrafo home*/
-  @media (min-width: 0px) and (max-width: 991.98px) { 
-    .container-text-conocenos{
+/**********************************************/
+/*Parrafo home*/
+@media (min-width: 0px) and (max-width: 991.98px) {
+  .container-text-conocenos {
     background: rgba(243, 207, 243, 0.3);
     display: flex;
     flex-wrap: wrap;
@@ -748,68 +801,74 @@ button[type="submit"]:hover {
     align-content: stretch;
     flex-direction: column;
     align-items: baseline;
-   } 
-   .primer-parrafo-home {
+  }
+
+  .primer-parrafo-home {
     text-align: justify;
     text-decoration: none;
     margin: 1rem 1rem 1rem 1rem;
     width: 80%;
   }
-  .titulo-primer-parrafo-home{
-  text-align:start;
-  justify-content: right;
-  text-decoration:none;
-  margin: 1rem 1rem 1rem 1rem;
-  font-size: 40%;
-  width: 30%;
+
+  .titulo-primer-parrafo-home {
+    text-align: start;
+    justify-content: right;
+    text-decoration: none;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 40%;
+    width: 30%;
   }
+}
+
+/*galerias Home - galeria general*/
+
+@media (min-width: 0px) and (max-width: 991.98px) {
+
+  .container-principal-galeria-home {
+    display: grid;
+    min-height: 100vh;
+    /* viewport height */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "baby baby baby baby"
+      "boda boda boda boda"
+      "boda boda boda boda"
+      "bautizo bautizo bautizo bautizo"
+      "cumpleanos cumpleanos cumpleanos cumpleanos"
+      "cumpleanos cumpleanos cumpleanos cumpleanos";
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
   }
 
-  /*galerias Home - galeria general*/
-
-  @media (min-width: 0px) and (max-width: 991.98px) { 
-  
- .container-principal-galeria-home{
-  display: grid;
-  min-height: 100vh; /* viewport height */
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr ;
-  grid-template-areas: 
-  "baby baby baby baby"
-  "boda boda boda boda"
-  "boda boda boda boda"
-  "bautizo bautizo bautizo bautizo"
-  "cumpleanos cumpleanos cumpleanos cumpleanos"
-  "cumpleanos cumpleanos cumpleanos cumpleanos";
-  gap: 1rem;
-  margin-bottom: 1rem;
-  margin: 1rem 1rem 1rem 1rem;
-}
-.container-galeria{
-  display: grid;
-  min-height: 100vh; /* viewport height */
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr 2fr 2fr  ;
-  grid-template-areas: 
-  "foto1 foto1 foto1"
-  "foto2 foto2 foto2"
-  "foto3 foto3 foto3"
-  "foto4 foto4 foto4"
-  "foto5 foto5 foto5"
-  "foto6 foto6 foto6"
-  "foto7 foto7 foto7"
-  "foto7 foto7 foto7"
-  "foto8 foto8 foto8";
-  gap: 1rem;
-  margin-bottom: 1rem;
-  margin: 2rem 2rem 2rem 2rem
-}
+  .container-galeria {
+    display: grid;
+    min-height: 100vh;
+    /* viewport height */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-areas:
+      "foto1 foto1 foto1"
+      "foto2 foto2 foto2"
+      "foto3 foto3 foto3"
+      "foto4 foto4 foto4"
+      "foto5 foto5 foto5"
+      "foto6 foto6 foto6"
+      "foto7 foto7 foto7"
+      "foto7 foto7 foto7"
+      "foto8 foto8 foto8";
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin: 2rem 2rem 2rem 2rem
+  }
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 90%;
   }
+
   .close {
     position: absolute;
     top: 5rem;
@@ -824,7 +883,7 @@ button[type="submit"]:hover {
 
 /*formulario*/
 @media (min-width: 0px) and (max-width: 991.98px) {
-.container-formulario {
+  .container-formulario {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -836,17 +895,20 @@ button[type="submit"]:hover {
     margin: auto;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.836);
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #c76ea9;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+  }
 }
-h1{
-   font-family: 'Roboto', sans-serif;
-   font-size: 24px; 
-   color: #c76ea9;
-}
-p{
-  font-family: 'Roboto', sans-serif;
-   font-size: 100%; 
-}
-}
+
 /*card de servicios*/
 @media (min-width: 0px) and (max-width:1000px) {
   .Cards-Servicios {
@@ -855,19 +917,21 @@ p{
     align-items: center;
     width: 100%;
     flex-direction: column;
-}
-.btn:hover {
-  color: #c76ea9;
-  text-decoration:none;
-}
-.btn:hover {
-  color: #c76ea9;
-  text-decoration:none;
-  border:0;
-}
-} 
+  }
 
-@media (min-width: 0px) and (max-width:1000px){
+  .btn:hover {
+    color: #c76ea9;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    color: #c76ea9;
+    text-decoration: none;
+    border: 0;
+  }
+}
+
+@media (min-width: 0px) and (max-width:1000px) {
   .Cards-perfiles {
     display: flex;
     align-items: center;
@@ -877,16 +941,17 @@ p{
     margin: auto;
     flex-direction: column;
   }
-  .container-perfiles{
+
+  .container-perfiles {
     display: flex;
     align-items: center;
     align-content: center center;
     flex-wrap: rapw;
-    flex-direction:column-reverse;
-    justify-content:space-evenly;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
     margin-left: 0.25rem;
     margin-right: 0.25rem;
-    padding:2rem;
-    position:relative;
-   }
+    padding: 2rem;
+    position: relative;
+  }
 }
