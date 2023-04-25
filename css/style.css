@@ -106,7 +106,6 @@ p {
 }
 
 
-
 /*---------------------------------------------------------------------------*/
 
 /* Footer Barra de Navegacion */
@@ -500,8 +499,6 @@ p {
   text-align: center;
   align-items: center center;
   margin: 1rem 2rem;
-  ;
-
 }
 
 .btn {
@@ -891,22 +888,12 @@ button[type="submit"]:hover {
     border-radius: 15px;
     justify-content: center;
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding: 2rem;
+    padding: 1rem;
     background-color: rgba(255, 255, 255, 0.836);
   }
 
-  h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    color: #c76ea9;
-  }
-
-  p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 100%;
-  }
 }
 
 /*card de servicios*/
@@ -917,17 +904,6 @@ button[type="submit"]:hover {
     align-items: center;
     width: 100%;
     flex-direction: column;
-  }
-
-  .btn:hover {
-    color: #c76ea9;
-    text-decoration: none;
-  }
-
-  .btn:hover {
-    color: #c76ea9;
-    text-decoration: none;
-    border: 0;
   }
 }
 
@@ -954,4 +930,19 @@ button[type="submit"]:hover {
     padding: 2rem;
     position: relative;
   }
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  color: #c76ea9;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-size: medium;
+}
 }
