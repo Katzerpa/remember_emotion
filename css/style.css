@@ -192,15 +192,14 @@ p {
 .container-principal-galeria-home {
   display: grid;
   min-height: 100vh;
-  /* viewport height */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "boda boda baby baby"
     "boda boda cumpleanos cumpleanos"
     "bautizo bautizo cumpleanos cumpleanos";
-  gap: 1rem;
   margin-bottom: 1rem;
+  gap:1rem;
   margin: 2rem 2rem 2rem 2rem;
 }
 
@@ -254,7 +253,6 @@ p {
 .container-galeria {
   display: grid;
   min-height: 100vh;
-  /* viewport height */
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2fr 2fr 2fr;
   grid-template-areas:
@@ -262,8 +260,8 @@ p {
     "foto4 foto2 foto6"
     "foto4 foto5 foto6"
     "foto7 foto5 foto8";
-  gap: 1rem;
   margin-bottom: 1rem;
+  gap:1rem;
   margin: 2rem 2rem 2rem 2rem
 }
 
@@ -787,8 +785,6 @@ button[type="submit"]:hover {
 /*Parrafo home*/
 @media (min-width: 0px) and (max-width: 991.98px) {
   .container-text-conocenos {
-    background: rgba(243, 207, 243, 0.3);
-    display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     font-family: 'Roboto', sans-serif;
@@ -822,12 +818,7 @@ button[type="submit"]:hover {
 @media (min-width: 0px) and (max-width: 991.98px) {
 
   .container-principal-galeria-home {
-    display: grid;
-    min-height: 100vh;
-    /* viewport height */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
+     grid-template-areas:
       "baby baby baby baby"
       "boda boda boda boda"
       "boda boda boda boda"
@@ -835,16 +826,9 @@ button[type="submit"]:hover {
       "cumpleanos cumpleanos cumpleanos cumpleanos"
       "cumpleanos cumpleanos cumpleanos cumpleanos";
     gap: 1rem;
-    margin-bottom: 1rem;
-    margin: 1rem 1rem 1rem 1rem;
   }
 
   .container-galeria {
-    display: grid;
-    min-height: 100vh;
-    /* viewport height */
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 2fr;
     grid-template-areas:
       "foto1 foto1 foto1"
       "foto2 foto2 foto2"
@@ -856,8 +840,6 @@ button[type="submit"]:hover {
       "foto7 foto7 foto7"
       "foto8 foto8 foto8";
     gap: 1rem;
-    margin-bottom: 1rem;
-    margin: 2rem 2rem 2rem 2rem
   }
 }
 
@@ -899,10 +881,6 @@ button[type="submit"]:hover {
 /*card de servicios*/
 @media (min-width: 0px) and (max-width:1000px) {
   .Cards-Servicios {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    width: 100%;
     flex-direction: column;
   }
 }
@@ -919,16 +897,8 @@ button[type="submit"]:hover {
   }
 
   .container-perfiles {
-    display: flex;
-    align-items: center;
-    align-content: center center;
-    flex-wrap: rapw;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
     margin-left: 0.25rem;
     margin-right: 0.25rem;
-    padding: 2rem;
-    position: relative;
   }
 }
 
