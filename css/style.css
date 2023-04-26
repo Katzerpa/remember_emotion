@@ -631,7 +631,6 @@ p {
 .card-perfil-img {
   width: 140px;
   height: 140px;
-  ;
   object-fit: cover;
   border-radius: 50%;
   text-align: center;
@@ -644,7 +643,6 @@ p {
   text-align: center;
   align-items: center center;
   margin: 1rem 2rem;
-  ;
 
 }
 
