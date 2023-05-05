@@ -469,15 +469,17 @@ p {
 }
 
 .card-fotografos {
+  display: flex;
   flex-direction: column;
   align-items: center center;
   border: 1px solid #f2edf8;
   border-radius: 15px;
-  justify-content: center;
+  justify-content: center center;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
   background-color: rgba(255, 255, 255, 0.836);
   width: 100%;
+  height: 45rem;
   align-content: center;
 }
 
@@ -494,23 +496,27 @@ p {
 }
 
 .card-fotografos p {
+  text-align: justify;
+  align-items: center center;
+  margin: 1rem 1rem;
+  width: 90%;
+}
+
+.card-fotografos a {
   text-align: center;
   align-items: center center;
-  margin: 1rem 2rem;
+  margin: auto;
 }
 
 .btn {
-  display: flex;
   padding: 1rem;
   background-color: #715d8b;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  width: 90%;
-  align-content: center;
-  text-align: center;
-  align-items: center;
-  margin: auto;
+  width: 80%;
+
+  margin:2re;
 }
 
 .btn:hover {
@@ -786,7 +792,7 @@ button[type="submit"]:hover {
     flex-wrap: wrap;
     justify-content: flex-start;
     font-family: 'Roboto', sans-serif;
-    padding: 4rem;
+    padding: 2rem;
     margin: 0 auto;
     margin-bottom: 0;
     align-content: stretch;
@@ -798,7 +804,7 @@ button[type="submit"]:hover {
     text-align: justify;
     text-decoration: none;
     margin: 1rem 1rem 1rem 1rem;
-    width: 80%;
+    width: 90%;
   }
 
   .titulo-primer-parrafo-home {
