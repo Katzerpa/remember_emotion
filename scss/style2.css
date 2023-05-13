@@ -8,11 +8,11 @@
 }
 *::-moz-selection {
   background-color: #c76ea9;
-  color: fff;
+  color: #fff;
 }
 *::selection {
   background-color: #c76ea9;
-  color: fff;
+  color: #fff;
 }
 
 h1 {
