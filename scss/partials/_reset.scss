@@ -1,0 +1,11 @@
+* {
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    &::selection{
+        background-color: #c76ea9; ;
+        color: fff;
+    }
+  }
+
