@@ -912,6 +912,8 @@ button[type="submit"] {
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   width: 100%;
+  transition-property: background-color;
+  transition-duration:0.5s;
 }
 
 button[type="submit"]:hover {
@@ -1003,7 +1005,7 @@ button[type="submit"]:hover {
   .background-image {
     position: absolute;
     width: 100%;
-    height: 200%;
+    height: 80%;
   }
   .container-formulario {
     display: flex;
