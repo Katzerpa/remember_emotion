@@ -1,0 +1,8 @@
+# Ignora la carpeta node_modules
+node_modules
+# Ignora todos los archivos json
+*.json
+# Ignora todos los archivos de vscode
+*.vscode
+# Ignora testfolder
+componentes
