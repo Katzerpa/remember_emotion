@@ -25,10 +25,13 @@
         gap: 2rem
     }
 
-    @mixin size-w-h($widh, $height) {
+    @mixin size-w-h($flex,$widh, $height,$object) {
+        flex-grow:$flex;
         width: $widh;
         height: $height;
+        object-fit: $object;
     }
+
 
     @each $nombre in boda,
     baby,
@@ -37,9 +40,7 @@
 
         .#{$nombre} {
             grid-area: $nombre;
-            flex-grow: 1;
-            @include size-w-h(100%, 100%);
-            object-fit: cover;
+            @include size-w-h(1,100%, 100%,cover);
             transition-property: transform;
             transition-duration: 0.8s;
 
@@ -52,3 +53,4 @@
 
     }
 }
+

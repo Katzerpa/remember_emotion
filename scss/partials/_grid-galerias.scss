@@ -1,0 +1,135 @@
+.titulo-galeria {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 150%;
+    width: 100%;
+    padding-top: 4rem;
+    position: relative;
+    flex-direction: column;
+}
+
+.container-galeria {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-areas:
+        "foto1 foto2 foto3"
+        "foto4 foto2 foto6"
+        "foto4 foto5 foto6"
+        "foto7 foto5 foto8";
+    margin-bottom: 1rem;
+    gap: 1rem;
+    margin: 2rem 2rem 2rem 2rem;
+
+    @mixin size-w-h($flex, $widh, $height, $object) {
+        flex-grow: $flex;
+        width: $widh;
+        height: $height;
+        object-fit: $object;
+    }
+
+    @for $item from 1 through 8 {
+        .foto#{$item } {
+            grid-area:foto#{$item };
+            @include size-w-h(1, 100%, 100%, cover);
+
+            .my-img {
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+        }
+    }
+}
+
+/* The Modal (background) */
+.animacion-modal{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.hover-focus{
+    color:$color-modal-f-h;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 10rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: $color-modal-full;
+    background-color: ($color-modal-full, 0.9);
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        @extend.animacion-modal;
+    }
+
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        text-align: center;
+        color: $color-blanco;
+        padding: 1rem 0;
+        height: 130%;
+        @extend.animacion-modal;
+      }
+    }
+
+    .close {
+        position: absolute;
+        top: 3rem;
+        right: 7rem;
+        padding: 2rem;
+        color:$color-blanco;
+        font-size: 40px;
+        font-weight: 500;
+        transition: 0.3s;
+
+            &:hover {
+               @extend .hover-focus;
+            }
+            &:focus {
+                @extend .hover-focus;
+            }
+    }
+
+/* Add Animation */
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}

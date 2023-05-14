@@ -303,4 +303,209 @@ footer .copy-right {
   -o-object-fit: cover;
      object-fit: cover;
   transform: scale(1.03);
+}
+
+.titulo-galeria {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 150%;
+  width: 100%;
+  padding-top: 4rem;
+  position: relative;
+  flex-direction: column;
+}
+
+.container-galeria {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-areas: "foto1 foto2 foto3" "foto4 foto2 foto6" "foto4 foto5 foto6" "foto7 foto5 foto8";
+  margin-bottom: 1rem;
+  gap: 1rem;
+  margin: 2rem 2rem 2rem 2rem;
+}
+.container-galeria .foto1 {
+  grid-area: foto1;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-galeria .foto1 .my-img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-galeria .foto1 .my-img:hover {
+  opacity: 0.7;
+}
+.container-galeria .foto2 {
+  grid-area: foto2;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-galeria .foto2 .my-img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-galeria .foto2 .my-img:hover {
+  opacity: 0.7;
+}
+.container-galeria .foto3 {
+  grid-area: foto3;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-galeria .foto3 .my-img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-galeria .foto3 .my-img:hover {
+  opacity: 0.7;
+}
+.container-galeria .foto4 {
+  grid-area: foto4;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-galeria .foto4 .my-img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-galeria .foto4 .my-img:hover {
+  opacity: 0.7;
+}
+.container-galeria .foto5 {
+  grid-area: foto5;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-galeria .foto5 .my-img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-galeria .foto5 .my-img:hover {
+  opacity: 0.7;
+}
+.container-galeria .foto6 {
+  grid-area: foto6;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-galeria .foto6 .my-img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-galeria .foto6 .my-img:hover {
+  opacity: 0.7;
+}
+.container-galeria .foto7 {
+  grid-area: foto7;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-galeria .foto7 .my-img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-galeria .foto7 .my-img:hover {
+  opacity: 0.7;
+}
+.container-galeria .foto8 {
+  grid-area: foto8;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-galeria .foto8 .my-img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-galeria .foto8 .my-img:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.animacion-modal, .modal #caption, .modal .modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.hover-focus, .close:focus, .close:hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  padding-top: 10rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(219, 163, 221);
+  background-color: rgb(219, 163, 221), 0.9;
+}
+.modal .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+.modal #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  text-align: center;
+  color: #fff;
+  padding: 1rem 0;
+  height: 130%;
+}
+
+.close {
+  position: absolute;
+  top: 3rem;
+  right: 7rem;
+  padding: 2rem;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+/* Add Animation */
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=style2.css.map */
