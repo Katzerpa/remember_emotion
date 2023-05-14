@@ -3,7 +3,7 @@
     align-items: center;
     align-content: center;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     padding: 1rem;
     position: relative;
     margin: auto;
@@ -22,7 +22,7 @@
             align-items: center;
             border: 1px solid #f2edf8;
             border-radius: 15px;
-            justify-content:stretch;
+            justify-content: stretch;
             background-color: rgba(255, 255, 255, 0.836);
             flex-direction: column;
             padding: 2rem;
@@ -32,21 +32,22 @@
             h6 {
                 text-align: center;
                 margin-bottom: 0;
-              }
+            }
 
             h4 {
                 text-align: center;
                 margin-bottom: 0;
-              }
+            }
 
-              p {
+            p {
                 text-align: center;
                 align-items: center center;
                 width: 100%;
                 margin: auto;
-              
-              }
-              .card-perfil-img {
+
+            }
+
+            .card-perfil-img {
                 width: 140px;
                 height: 140px;
                 object-fit: cover;
@@ -54,28 +55,29 @@
                 text-align: center;
                 align-items: center center;
                 justify-content: center;
-              
-              }
-              .social-icons-perfil {
+
+            }
+
+            .social-icons-perfil {
                 display: flex;
                 text-align: center;
                 justify-content: center;
                 padding: 1.25rem;
-              
-              }
-              
-              .social-icon-perfil-img {
+
+            }
+
+            .social-icon-perfil-img {
                 margin-right: 8px;
                 transition-property: border-radius, padding, background-color;
                 transition-duration: 0.8s;
-                &:hover{
+
+                &:hover {
                     padding: 2px;
                     background: #715d8b;
-                    border-radius: 90%;  
+                    border-radius: 90%;
                 }
-                
-              }
-          }
-      }
-  }
-  
+
+            }
+        }
+    }
+}
