@@ -123,4 +123,29 @@ footer .copy-right {
   max-height: 95vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.container-text-conocenos {
+  background: rgba(243, 207, 243, 0.3);
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  padding: 7rem;
+  margin: 0;
+  margin-bottom: 0;
+  align-items: center;
+  flex-direction: row;
+}
+.container-text-conocenos .titulo-primer-parrafo-home {
+  text-align: end;
+  justify-content: right;
+  text-decoration: none;
+  margin: 1rem;
+  width: 30%;
+}
+.container-text-conocenos .primer-parrafo-home {
+  text-align: justify;
+  text-decoration: none;
+  margin: 1rem;
+  width: 45%;
 }/*# sourceMappingURL=style2.css.map */
