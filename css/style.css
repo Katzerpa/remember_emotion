@@ -47,17 +47,12 @@ p {
 /* Navbar Barra de Navegacion */
 
 
-.header_Container {
+.header_container {
   background: rgba(243, 207, 243, 0.7);
   width: 100%;
   position: fixed;
   display: flow-root;
   z-index: 3;
-}
-
-.color-menu-galeria {
-  background: rgba(243, 207, 243, 0.7);
-
 }
 
 .contenedor-logo-nav {
@@ -66,10 +61,8 @@ p {
   margin-left: 3rem;
 }
 
-.navbar .navbar-nav .nav-item {
-
-  transition-property: background-color, border-radius, margin;
-  transition-duration: 0.5s;
+.color-menu-galeria {
+  background: rgba(243, 207, 243, 0.7);
 
 }
 
@@ -83,17 +76,22 @@ p {
 
 }
 
+.navbar .navbar-nav .nav-item {
+
+  transition-property: background-color, border-radius, margin;
+  transition-duration: 0.5s;
+
+}
+
 .navbar .navbar-nav .nav-item:hover {
   background-color: #dfa0db;
   /* Cambiar el color de fondo al hacer "hover" */
   border-radius: 1rem;
   margin: 0 1rem;
 
-
-
 }
 
-.navbar ul.navbar-nav .nav-item a.nav-link:hover {
+.navbar .navbar-nav .nav-item .nav-link:hover {
   color: #fff;
   /* Cambiar el color de texto al hacer "hover" */
 

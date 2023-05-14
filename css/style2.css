@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+* {
+  Margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: #c76ea9;
+  color: #fff;
+}
+*::selection {
+  background-color: #c76ea9;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  color: #c76ea9;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #c76ea9;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: #5529ce;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  color: #fff;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-size: medium;
+}
+
+header .header_container {
+  background: rgba(243, 207, 243, 0.7);
+  width: 100%;
+  position: fixed;
+  display: flow-root;
+  z-index: 3;
+}
+header .contenedor-logo-nav {
+  display: flex;
+  width: 200px;
+  margin-left: 3rem;
+}
+header .navbar .navbar-nav .nav-item {
+  transition-property: background-color, border-radius, margin;
+  transition-duration: 0.5s;
+}
+header .navbar .navbar-nav .nav-item:hover {
+  background-color: #dfa0db;
+  /* Cambiar el color de fondo al hacer "hover" */
+  border-radius: 1rem;
+  margin: 0 1rem;
+}
+header .navbar .navbar-nav .nav-item a .nav-link {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  padding: 2rem;
+  margin: 0 auto;
+  color: #856dae;
+}
+header .navbar .navbar-nav .nav-item a .nav-link:hover {
+  color: #fff;
+}
+header .navbar .navbar-nav .nav-item .dropdown-menu .color-menu-galeria {
+  background: rgba(243, 207, 243, 0.7);
+}
+header .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  padding: 2rem;
+  margin: 0 auto;
+  color: #856dae;
+}
+header .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #dfa0db;
+  color: #fff;
+}/*# sourceMappingURL=style2.css.map */

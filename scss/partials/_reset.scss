@@ -4,8 +4,8 @@
     box-sizing: border-box;
     
     &::selection{
-        background-color:$color_rosa_ligero; 
-        color:$color_blanco;
+        background-color:$color-rosa-ligero-primario; 
+        color: $color-blanco;
     }
   }
 

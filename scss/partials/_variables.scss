@@ -2,7 +2,10 @@
 @import url(https://fonts.gstatic.com);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
-$fontsroboto:'Roboto', sans-serif;
-$color_rosa_ligero:#c76ea9;
-$color_violeta_brillante:#5529ce;
-$color_blanco:#fff;
+$font-familia-roboto:'Roboto', sans-serif;
+$color-rosa-ligero-primario:#c76ea9;
+$color-violeta-brillante-secundario:#5529ce;
+$color-blanco:#fff;
+$color-rosa-palido:rgba(243, 207, 243, 0.7);
+$color-violeta-suave:#856dae;
+$color-rosa-pastel:#dfa0db

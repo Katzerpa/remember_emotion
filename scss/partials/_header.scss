@@ -1,0 +1,68 @@
+.header_container {
+    background: $color-rosa-palido;
+    width: 100%;
+    position: fixed;
+    display: flow-root;
+    z-index: 3;
+}
+
+header {
+    .contenedor-logo-nav {
+        display: flex;
+        width: 200px;
+        margin-left: 3rem;
+    }
+
+    .navbar {
+        .navbar-nav {
+
+            .nav-item {
+                transition-property: background-color, border-radius, margin;
+                transition-duration: 0.5s;
+
+                &:hover {
+                    background-color: $color-rosa-pastel;
+                    border-radius: 1rem;
+                    margin: 0 1rem;
+                }
+
+                .nav-link {
+                    display: inline-block;
+                    font-family: $font-familia-roboto;
+                    font-size: 24px;
+                    padding: 2rem;
+                    margin: 0 auto;
+                    color: $color-violeta-suave;
+
+                    &:hover {
+                        color: $color-blanco;
+                    }
+                }
+
+                .color-menu-galeria {
+                    background: $color-rosa-palido;
+                }
+
+                .dropdown-menu {
+
+                    .dropdown-item {
+                        display: inline-block;
+                        font-family: $font-familia-roboto;
+                        font-size: 24px;
+                        padding: 2rem;
+                        margin: 0 auto;
+                        color: $color-violeta-suave;
+
+                        &:hover {
+                            background-color: $color-rosa-pastel;
+                            color: $color-blanco;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
