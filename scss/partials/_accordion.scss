@@ -1,0 +1,52 @@
+.container-text-nosotros {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 1rem;
+    width: 70%;
+    min-height: 30vh;
+    padding-top: 8rem;
+    flex-direction: column;
+
+    .primer-parrafo-nosotros {
+        text-align: justify;
+        text-decoration: none;
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+button.accordion-button {
+    background-color: #f7ddf7;
+    font-size: 1.75rem;
+}
+
+button.panelsStayOpen-collapseOne {
+    background-color: $color-rosa-ligero-primario;
+
+}
+
+.accordion {
+    --bs-accordion-active-bg: #c76ea9;
+    --bs-accordion-btn-color: #c76ea9;
+    --bs-accordion-active-color: #fff;
+    --bs-accordion-btn-focus-border-color: #c76ea9;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(230, 58, 221, 0.25);
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+
+}
+
+.accordion-item {
+    color: $color-font-negro;
+
+}

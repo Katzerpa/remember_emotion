@@ -510,108 +510,11 @@ footer .copy-right {
     transform: scale(1);
   }
 }
-.titulos, .container-servicios .titulo-producto, .container-servicios .titulo-servicio {
-  text-align: center;
-  text-decoration: none;
-  font-size: 150%;
-}
-
-.scale-in-top, .container-servicios .cards-servicios .card-fotografos:nth-child(6), .container-servicios .cards-servicios .card-fotografos:nth-child(5), .container-servicios .cards-servicios .card-fotografos:nth-child(4), .container-servicios .cards-servicios .card-fotografos:nth-child(3), .container-servicios .cards-servicios .card-fotografos:nth-child(2), .container-servicios .cards-servicios .card-fotografos:nth-child(1) {
-  animation: scale-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.container-servicios {
-  display: flex;
-  align-items: stretch;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: auto;
-  padding: 1rem;
-  width: 90%;
-  position: relative;
-}
-.container-servicios .titulo-servicio {
-  margin-top: 5rem;
-  padding: 2rem;
-}
-.container-servicios .titulo-producto {
-  padding: 2rem;
-  margin-top: -1rem;
-}
-.container-servicios .cards-servicios {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  width: 100%;
-}
-.container-servicios .cards-servicios .card-fotografos {
-  display: flex;
-  flex-direction: column;
-  align-items: center center;
-  border: 1px solid #f2edf8;
-  border-radius: 15px;
-  justify-content: center center;
-  margin-bottom: 3rem;
-  padding-bottom: 3rem;
-  background-color: rgba(255, 255, 255, 0.836);
-  width: 100%;
-  align-content: center;
-}
-.container-servicios .cards-servicios .card-fotografos h6 {
-  text-align: center;
-  margin-bottom: 0;
-}
-.container-servicios .cards-servicios .card-fotografos img {
-  width: 100%;
-  margin-bottom: auto;
-  padding: 1rem;
-  border-radius: 2rem;
-}
-.container-servicios .cards-servicios .card-fotografos p {
-  text-align: justify;
-  align-items: center center;
-  margin: 1rem 1rem;
-  padding: auto;
-  width: 90%;
-}
-.container-servicios .cards-servicios .card-fotografos a {
-  text-align: center;
-  align-items: center center;
-  margin: auto;
-}
-.container-servicios .cards-servicios .card-fotografos .btn {
-  padding: 1rem;
-  background-color: #715d8b;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  width: 80%;
-  margin: 2rem;
-}
-.container-servicios .cards-servicios .card-fotografos .btn:hover {
-  background-color: #fff;
-  color: #c76ea9;
-  text-decoration: none;
-  border: 0;
-}
-@keyframes scale-in-top {
-  10% {
-    transform: scale(0);
-    transform-origin: 50% 0%;
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    transform-origin: 50% 0%;
-    opacity: 1;
-  }
-}
 .container-text-nosotros {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
-  font-size: 100%;
+  font-size: 14px;
   align-items: center;
   margin: 0 auto;
   margin-bottom: 0;
@@ -621,11 +524,37 @@ footer .copy-right {
   padding-top: 8rem;
   flex-direction: column;
 }
-.container-text-nosotros .titulo-primer-parrafo-nosotros {
-  text-align: center;
+.container-text-nosotros .primer-parrafo-nosotros {
+  text-align: justify;
   text-decoration: none;
-  font-size: 100%;
-  margin: auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.accordion-button.collapsed::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+button.accordion-button {
+  background-color: #f7ddf7;
+  font-size: 1.75rem;
+}
+
+button.panelsStayOpen-collapseOne {
+  background-color: #c76ea9;
+}
+
+.accordion {
+  --bs-accordion-active-bg: #c76ea9;
+  --bs-accordion-btn-color: #c76ea9;
+  --bs-accordion-active-color: #fff;
+  --bs-accordion-btn-focus-border-color: #c76ea9;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(230, 58, 221, 0.25);
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-item {
+  color: #64748b;
 }
 
 .container-segundo-text-nosotros {
