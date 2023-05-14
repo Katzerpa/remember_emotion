@@ -1,0 +1,142 @@
+.titulos {
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.scale-in-top {
+	-webkit-animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	 animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.container-servicios {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+    position: relative;
+
+    .titulo-servicio {
+        @extend.titulos;
+        margin-top: 5rem;
+        padding: 2rem;
+    }
+
+    .titulo-producto {
+        @extend.titulos;
+        padding: 2rem;
+        margin-top: -1rem;
+    }
+
+    .cards-servicios {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        width: 100%;
+
+        .card-fotografos {
+            display: flex;
+            flex-direction: column;
+            align-items: center center;
+            border: 1px solid $color-boder-card;
+            border-radius: 15px;
+            justify-content: center center;
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            background-color: $color-background-card;
+            width: 100%;
+            align-content: center;
+
+            h6 {
+                text-align: center;
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 100%;
+                margin-bottom: auto;
+                padding: 1rem;
+                border-radius: 2rem;
+
+            }
+
+            p {
+                text-align: justify;
+                align-items: center center;
+                margin: 1rem 1rem;
+                padding: auto;
+                width: 90%;
+            }
+
+            a {
+                text-align: center;
+                align-items: center center;
+                margin: auto;
+
+            }
+
+            .btn {
+                padding: 1rem;
+                background-color: $color-violeta-pastel;
+                color: $color-blanco;
+                text-decoration: none;
+                border-radius: 5px;
+                width: 80%;
+                margin: 2rem;
+
+                &:hover {
+                    background-color: $color-blanco;
+                    color: $color-rosa-ligero-primario;
+                    text-decoration: none;
+                    border: 0;
+
+                }
+            }
+
+
+        }
+        @for $item from 1 through 6{
+            .card-fotografos:nth-child(#{$item}){
+                @extend.scale-in-top;
+            }
+        }
+
+    }
+
+}
+@-webkit-keyframes scale-in-top {
+    10% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-top {
+   10% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+  }
