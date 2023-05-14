@@ -1,0 +1,81 @@
+.container-perfiles {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content:center;
+    padding: 1rem;
+    position: relative;
+    margin: auto;
+
+    .cards-perfiles {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        margin: auto;
+        flex-direction: row;
+
+        .card-perfil {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            border: 1px solid #f2edf8;
+            border-radius: 15px;
+            justify-content:stretch;
+            background-color: rgba(255, 255, 255, 0.836);
+            flex-direction: column;
+            padding: 2rem;
+            margin: 2rem;
+            width: 100%;
+
+            h6 {
+                text-align: center;
+                margin-bottom: 0;
+              }
+
+            h4 {
+                text-align: center;
+                margin-bottom: 0;
+              }
+
+              p {
+                text-align: center;
+                align-items: center center;
+                width: 100%;
+                margin: auto;
+              
+              }
+              .card-perfil-img {
+                width: 140px;
+                height: 140px;
+                object-fit: cover;
+                border-radius: 50%;
+                text-align: center;
+                align-items: center center;
+                justify-content: center;
+              
+              }
+              .social-icons-perfil {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                padding: 1.25rem;
+              
+              }
+              
+              .social-icon-perfil-img {
+                margin-right: 8px;
+                transition-property: border-radius, padding, background-color;
+                transition-duration: 0.8s;
+                &:hover{
+                    padding: 2px;
+                    background: #715d8b;
+                    border-radius: 90%;  
+                }
+                
+              }
+          }
+      }
+  }
+  

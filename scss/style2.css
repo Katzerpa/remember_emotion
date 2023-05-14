@@ -574,4 +574,76 @@ button.panelsStayOpen-collapseOne {
   padding: 1rem;
   margin: auto;
   width: 80%;
+}
+
+.container-perfiles {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  margin: auto;
+}
+.container-perfiles .cards-perfiles {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+  flex-direction: row;
+}
+.container-perfiles .cards-perfiles .card-perfil {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid #f2edf8;
+  border-radius: 15px;
+  justify-content: stretch;
+  background-color: rgba(255, 255, 255, 0.836);
+  flex-direction: column;
+  padding: 2rem;
+  margin: 2rem;
+  width: 100%;
+}
+.container-perfiles .cards-perfiles .card-perfil h6 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.container-perfiles .cards-perfiles .card-perfil h4 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.container-perfiles .cards-perfiles .card-perfil p {
+  text-align: center;
+  align-items: center center;
+  width: 100%;
+  margin: auto;
+}
+.container-perfiles .cards-perfiles .card-perfil .card-perfil-img {
+  width: 140px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center center;
+  justify-content: center;
+}
+.container-perfiles .cards-perfiles .card-perfil .social-icons-perfil {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+.container-perfiles .cards-perfiles .card-perfil .social-icon-perfil-img {
+  margin-right: 8px;
+  transition-property: border-radius, padding, background-color;
+  transition-duration: 0.8s;
+}
+.container-perfiles .cards-perfiles .card-perfil .social-icon-perfil-img:hover {
+  padding: 2px;
+  background: #715d8b;
+  border-radius: 90%;
 }/*# sourceMappingURL=style2.css.map */
