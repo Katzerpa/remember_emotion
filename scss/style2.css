@@ -15,6 +15,22 @@
   color: #fff;
 }
 
+html {
+  color: light;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+boby {
+  position: relative;
+  min-height: 100vh;
+}
+
 h1,
 h2,
 h3,
