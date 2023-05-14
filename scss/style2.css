@@ -15,34 +15,82 @@
   color: #fff;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.75;
   font-family: "Roboto", sans-serif;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-top: 0;
+}
+
+h1 {
+  margin: 32px 0;
   font-size: 48px;
   color: #c76ea9;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  margin: 32px 0;
+  font-size: 36px;
   color: #c76ea9;
 }
 
-h4 {
-  font-family: "Roboto", sans-serif;
+h3 {
+  margin: 24px 0;
   font-size: 30px;
   color: #5529ce;
 }
 
+h4 {
+  margin: 20px 0;
+  font-size: 24px;
+  color: #5529ce;
+}
+
 h5 {
-  font-family: "Roboto", sans-serif;
-  font-size: 32px;
+  margin: 18px 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+h6 {
+  margin: 18px 0;
+  font-size: 16px;
   color: #fff;
 }
 
 p {
+  margin: 16px 0;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-size: medium;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #64748b;
+}
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-top: 0;
 }
 
 .header_container {
@@ -137,11 +185,14 @@ footer .copy-right {
   flex-direction: row;
 }
 .container-text-conocenos .titulo-primer-parrafo-home {
-  text-align: end;
+  text-align: start;
   justify-content: right;
   text-decoration: none;
   margin: 1rem;
-  width: 30%;
+  width: 18%;
+}
+.container-text-conocenos .titulo-primer-parrafo-home h3, .container-text-conocenos .titulo-primer-parrafo-home h2 {
+  margin-bottom: 0;
 }
 .container-text-conocenos .primer-parrafo-home {
   text-align: justify;

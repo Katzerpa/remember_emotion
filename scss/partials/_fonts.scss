@@ -1,30 +1,72 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.75;
+  font-family: $font-familia-roboto;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-top: 0;
+  }
+}
+
+
 h1 {
-    font-family: $font-familia-roboto;
-    font-size: 48px;
-    color: $color-rosa-ligero-primario;
+  margin: 32px 0;
+  font-size: 48px;
+  color: $color-rosa-ligero-primario;
+}
+
+h2 {
+  margin: 32px 0;
+  font-size: 36px;
+  color: $color-rosa-ligero-primario;
+}
+
+h3 {
+  margin: 24px 0;
+  font-size: 30px;
+  color: $color-violeta-brillante-secundario;
+}
+
+h4 {
+  margin: 20px 0;
+  font-size: 24px;
+  color: $color-violeta-brillante-secundario;
+}
+
+h5 {
+  margin: 18px 0;
+  font-size: 20px;
+  color: $color-blanco;
+}
+
+h6 {
+  margin: 18px 0;
+  font-size: 16px;
+  color: $color-blanco;
+}
+
+p {
+  margin: 16px 0;
+  font-family: $font-familia-roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: $color-font-negro;
+
+  &:first-child {
+    margin-top: 0;
   }
-  
-  h2 {
-    font-family: $font-familia-roboto;
-    font-size: 16px;
-    color: $color-rosa-ligero-primario;
+
+  &:last-child {
+    margin-top: 0;
   }
-  
-  h4 {
-    font-family: $font-familia-roboto;
-    font-size: 30px;
-    color: $color-violeta-brillante-secundario;
-  }
-  
-  h5 {
-    font-family: $font-familia-roboto;
-    font-size: 32px;
-    color:$color-blanco;
-  }
-  
-  p {
-    font-family: $font-familia-roboto;
-    font-size: 14px;
-    font-size: medium;
-  }
-  
+}
