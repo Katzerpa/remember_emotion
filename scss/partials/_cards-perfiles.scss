@@ -20,10 +20,10 @@
             flex: 1;
             display: flex;
             align-items: center;
-            border: 1px solid #f2edf8;
+            border: 1px solid $color-boder-card;
             border-radius: 15px;
             justify-content: stretch;
-            background-color: rgba(255, 255, 255, 0.836);
+            background-color: $color-background-card;
             flex-direction: column;
             padding: 2rem;
             margin: 2rem;
@@ -73,7 +73,7 @@
 
                 &:hover {
                     padding: 2px;
-                    background: #715d8b;
+                    background: $color-violeta-pastel;
                     border-radius: 90%;
                 }
 
