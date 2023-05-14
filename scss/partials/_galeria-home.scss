@@ -1,0 +1,50 @@
+.titulo-galeria-home {
+    display: flex;
+    text-align: left;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 48px;
+}
+
+.container-principal-galeria-home {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "boda boda baby baby"
+        "boda boda cumpleanos cumpleanos"
+        "bautizo bautizo cumpleanos cumpleanos";
+    margin-bottom: 1rem;
+    gap: 1rem;
+    margin: 2rem;
+    transition-property: gap;
+    transition-duration: 0.8s;
+
+    &:hover {
+        gap: 2rem
+    }
+
+    @each $nombre in boda,
+    baby,
+    bautizo,
+    cumpleanos {
+
+        .#{$nombre} {
+            grid-area: $nombre;
+            flex-grow: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition-property: transform;
+            transition-duration: 0.8s;
+
+            &:hover {
+                flex-grow: 1;
+                object-fit: cover;
+                transform: scale(1.03);
+            }
+        }
+
+    }
+}

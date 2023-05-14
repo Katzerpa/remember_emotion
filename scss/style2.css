@@ -148,4 +148,92 @@ footer .copy-right {
   text-decoration: none;
   margin: 1rem;
   width: 45%;
+}
+
+.titulo-galeria-home {
+  display: flex;
+  text-align: left;
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 48px;
+}
+
+.container-principal-galeria-home {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "boda boda baby baby" "boda boda cumpleanos cumpleanos" "bautizo bautizo cumpleanos cumpleanos";
+  margin-bottom: 1rem;
+  gap: 1rem;
+  margin: 2rem;
+  transition-property: gap;
+  transition-duration: 0.8s;
+}
+.container-principal-galeria-home:hover {
+  gap: 2rem;
+}
+.container-principal-galeria-home .boda {
+  grid-area: boda;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition-property: transform;
+  transition-duration: 0.8s;
+}
+.container-principal-galeria-home .boda:hover {
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.03);
+}
+.container-principal-galeria-home .baby {
+  grid-area: baby;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition-property: transform;
+  transition-duration: 0.8s;
+}
+.container-principal-galeria-home .baby:hover {
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.03);
+}
+.container-principal-galeria-home .bautizo {
+  grid-area: bautizo;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition-property: transform;
+  transition-duration: 0.8s;
+}
+.container-principal-galeria-home .bautizo:hover {
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.03);
+}
+.container-principal-galeria-home .cumpleanos {
+  grid-area: cumpleanos;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition-property: transform;
+  transition-duration: 0.8s;
+}
+.container-principal-galeria-home .cumpleanos:hover {
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.03);
 }/*# sourceMappingURL=style2.css.map */
