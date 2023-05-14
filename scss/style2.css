@@ -92,4 +92,28 @@ header .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
 header .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
   background-color: #dfa0db;
   color: #fff;
+}
+
+.color-backgroud-footer {
+  background: rgb(205, 197, 211);
+}
+
+footer .logo-container-footer {
+  flex-grow: 1;
+}
+footer .nav .nav-item .nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  transition-property: background-color, padding, border-radius;
+  transition-duration: 0.3s;
+}
+footer .nav .nav-item .nav-link:hover {
+  padding: 0.5rem 1rem;
+  background: #715d8b;
+  border-radius: 1rem;
+}
+footer .copy-right {
+  display: block;
+  font-size: 14px;
 }/*# sourceMappingURL=style2.css.map */
