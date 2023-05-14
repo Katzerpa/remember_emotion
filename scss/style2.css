@@ -116,4 +116,11 @@ footer .nav .nav-item .nav-link:hover {
 footer .copy-right {
   display: block;
   font-size: 14px;
+}
+
+.imagen-carrucel-home {
+  width: auto;
+  max-height: 95vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style2.css.map */
