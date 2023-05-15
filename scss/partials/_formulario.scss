@@ -13,7 +13,7 @@
 .border-inputs-form {
     padding: 1rem;
     margin-bottom: 1rem;
-    border: 0.5px solid #ccc;
+    border: 0.5px solid $color-borde-form;
     border-radius: 4px;
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -32,14 +32,14 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-        border: 1px solid #b2a3c5;
+        border: 1px solid $color-violeta-palido;
         border-radius: 15px;
         justify-content: center;
         position: relative;
         width: 50%;
         margin: auto;
         padding: 2rem;
-        background-color: rgba(255, 255, 255, 0.836);
+        background-color: $color-background-card;
 
         form {
             justify-content: center;
@@ -57,14 +57,14 @@
             input {
                 @extend .border-inputs-form;
                 &:hover {
-                    background-color: white;
-                    color: rgb(202, 196, 196);
-                    border-color: #715d8b;
+                    background-color:$color-blanco;
+                    color:$color-violeta-palido;
+                    border-color: $color-violeta-pastel;
                 }
 
                 &:focus {
-                    box-shadow: 0 0 0 .10rem #715d8b;
-                    border-color: #715d8b;
+                    box-shadow: 0 0 0 .10rem $color-violeta-pastel;
+                    border-color: $color-violeta-pastel;
                 }
             }
 
@@ -72,28 +72,28 @@
                 @extend .border-inputs-form;
 
                 &:hover {
-                    background-color: white;
-                    color: rgb(202, 196, 196);
-                    border-color: #715d8b;
+                    background-color: $color-blanco;
+                    color: $color-violeta-palido;
+                    border-color: $color-violeta-pastel;
                 }
 
                 &:focus {
-                    box-shadow: 0 0 0 .10rem #715d8b;
-                    border-color: #715d8b;
+                    box-shadow: 0 0 0 .10rem $color-violeta-pastel;
+                    border-color: $color-violeta-pastel;
                 }
             }
 
             textarea {
                 @extend .border-inputs-form;
                 &:hover {
-                    background-color: white;
-                    color: rgb(202, 196, 196);
-                    border-color: #715d8b;
+                    background-color: $color-blanco;
+                    color: $color-violeta-palido;
+                    border-color: $color-violeta-pastel;
                 }
 
                 &:focus {
-                    box-shadow: 0 0 0 .10rem #715d8b;
-                    border-color: #715d8b;
+                    box-shadow: 0 0 0 .10rem $color-violeta-pastel;
+                    border-color: $color-violeta-pastel;
                 }
             }
 
@@ -105,11 +105,11 @@
 
 
 .form-control:hover {
-    background-color: white;
+    background-color:$color-blanco;
     color: black;
-    border-color: #715d8b;
+    border-color:$color-violeta-pastel;
     &:focus{
-        box-shadow: 0 0 0 .10rem #715d8b;
+        box-shadow: 0 0 0 .10rem $color-violeta-pastel;
     }
   
   }
@@ -117,8 +117,8 @@
   button[type="submit"] {
     padding: 1rem;
     margin-bottom: 2rem;
-    background-color: #715d8b;
-    color: white;
+    background-color: $color-violeta-pastel;
+    color:$color-blanco;
     border: 0;
     border-radius: 4px;
     cursor: pointer;
@@ -128,7 +128,8 @@
     transition-duration:0.5s;
 
     &:hover{
-        background-color: #3b0c79;
+        background-color: $color-rosa-ligero-primario;
+        
     }
   }
   

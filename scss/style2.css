@@ -779,7 +779,7 @@ button.panelsStayOpen-collapseOne {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  border: 1px solid #b2a3c5;
+  border: 1px solid rgb(205, 197, 211);
   border-radius: 15px;
   justify-content: center;
   position: relative;
@@ -801,8 +801,8 @@ button.panelsStayOpen-collapseOne {
   font-size: small;
 }
 .container-principal-fomulario .container-formulario form input:hover {
-  background-color: white;
-  color: rgb(202, 196, 196);
+  background-color: #fff;
+  color: rgb(205, 197, 211);
   border-color: #715d8b;
 }
 .container-principal-fomulario .container-formulario form input:focus {
@@ -810,8 +810,8 @@ button.panelsStayOpen-collapseOne {
   border-color: #715d8b;
 }
 .container-principal-fomulario .container-formulario form select:hover {
-  background-color: white;
-  color: rgb(202, 196, 196);
+  background-color: #fff;
+  color: rgb(205, 197, 211);
   border-color: #715d8b;
 }
 .container-principal-fomulario .container-formulario form select:focus {
@@ -819,8 +819,8 @@ button.panelsStayOpen-collapseOne {
   border-color: #715d8b;
 }
 .container-principal-fomulario .container-formulario form textarea:hover {
-  background-color: white;
-  color: rgb(202, 196, 196);
+  background-color: #fff;
+  color: rgb(205, 197, 211);
   border-color: #715d8b;
 }
 .container-principal-fomulario .container-formulario form textarea:focus {
@@ -829,7 +829,7 @@ button.panelsStayOpen-collapseOne {
 }
 
 .form-control:hover {
-  background-color: white;
+  background-color: #fff;
   color: black;
   border-color: #715d8b;
 }
@@ -841,7 +841,7 @@ button[type=submit] {
   padding: 1rem;
   margin-bottom: 2rem;
   background-color: #715d8b;
-  color: white;
+  color: #fff;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
@@ -851,5 +851,5 @@ button[type=submit] {
   transition-duration: 0.5s;
 }
 button[type=submit]:hover {
-  background-color: #3b0c79;
+  background-color: #c76ea9;
 }/*# sourceMappingURL=style2.css.map */
