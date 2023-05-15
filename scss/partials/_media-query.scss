@@ -1,0 +1,143 @@
+
+
+
+@media (min-width: 0px) and (max-width: 991.98px) {
+    .container-text-conocenos {
+        background:$color-rosa-palido;
+        display: flex;
+        font-family: "Roboto", sans-serif;
+        padding: 7rem;
+        margin: 0;
+        margin-bottom: 0;
+        align-items: flex-start;
+        align-content: center;
+        width: min-content;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container-text-conocenos .primer-parrafo-home {
+        text-align: justify;
+        text-decoration: none;
+        margin: 0;
+        width:100%;
+    }
+
+   
+    .container-principal-galeria-home {
+       grid-template-areas:
+        "baby baby baby baby"
+        "boda boda boda boda"
+        "boda boda boda boda"
+        "bautizo bautizo bautizo bautizo"
+        "cumpleanos cumpleanos cumpleanos cumpleanos"
+        "cumpleanos cumpleanos cumpleanos cumpleanos";
+      gap: 1rem;
+    }
+  
+    .container-galeria {
+      grid-template-areas:
+        "foto1 foto1 foto1"
+        "foto2 foto2 foto2"
+        "foto3 foto3 foto3"
+        "foto4 foto4 foto4"
+        "foto5 foto5 foto5"
+        "foto6 foto6 foto6"
+        "foto7 foto7 foto7"
+        "foto7 foto7 foto7"
+        "foto8 foto8 foto8";
+      gap: 1rem;
+    }
+     .background-image {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+      }
+      .container-principal-fomulario .container-formulario {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        border: 1px solid $color-violeta-palido;
+        border-radius: 15px;
+        justify-content: center;
+        position: relative;
+         width: 100%; 
+        margin: auto;
+        padding: 2rem;
+        background-color:$color-background-card;
+    }
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        color: $color-rosa-ligero-primario;
+        margin-bottom: 0;
+      }
+      h2 {
+        margin: 32px 0;
+        font-size: 18px;
+        color: $color-rosa-ligero-primario;
+      }
+      p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+      }
+
+  }
+
+  @media only screen and (max-width: 700px) {
+    .modal .modal-content {
+      width: 90%;
+    }
+  
+    .close {
+      position: absolute;
+      top: 5rem;
+      right: 1px;
+      padding: 1rem;
+      color: $color-blanco;
+      font-size: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+   
+  }
+
+  @media (min-width: 0px) and (max-width:1000px) {
+    .cards-servicios {
+      flex-direction: column;
+    }
+    .container-servicios .cards-servicios .card-fotografos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #f2edf8;
+        border-radius: 15px;
+        justify-content: center;
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
+        background-color:$color-background-card;
+        width: 100%;
+        align-content: center;
+    }
+    .container-perfiles .cards-perfiles {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        margin: auto;
+        flex-direction: column;
+    }
+    .container-segundo-text-nosotros .segundo-parrafo-nosotros {
+        text-align: justify;
+        text-decoration: none;
+        padding: 1rem;
+        margin: auto;
+        width: 100%;
+    }
+      .container-perfiles {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+
+  }
