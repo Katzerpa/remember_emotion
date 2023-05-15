@@ -743,4 +743,113 @@ button.panelsStayOpen-collapseOne {
   padding: 2px;
   background: #715d8b;
   border-radius: 90%;
+}
+
+.background-image {
+  position: absolute;
+  width: 50%;
+  height: 150%;
+  background-image: url("../img/contacto/fotograf.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  margin: auto;
+  margin-bottom: 0%;
+  z-index: -3;
+}
+
+.border-inputs-form, .container-principal-fomulario .container-formulario form textarea, .container-principal-fomulario .container-formulario form select, .container-principal-fomulario .container-formulario form input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 0.5px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-principal-fomulario {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: auto;
+  padding: 2rem;
+  padding-top: 11rem;
+  padding-bottom: 4rem;
+}
+.container-principal-fomulario .container-formulario {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  border: 1px solid #b2a3c5;
+  border-radius: 15px;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.836);
+}
+.container-principal-fomulario .container-formulario form {
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.container-principal-fomulario .container-formulario form label {
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 0;
+  font-size: small;
+}
+.container-principal-fomulario .container-formulario form input:hover {
+  background-color: white;
+  color: rgb(202, 196, 196);
+  border-color: #715d8b;
+}
+.container-principal-fomulario .container-formulario form input:focus {
+  box-shadow: 0 0 0 0.1rem #715d8b;
+  border-color: #715d8b;
+}
+.container-principal-fomulario .container-formulario form select:hover {
+  background-color: white;
+  color: rgb(202, 196, 196);
+  border-color: #715d8b;
+}
+.container-principal-fomulario .container-formulario form select:focus {
+  box-shadow: 0 0 0 0.1rem #715d8b;
+  border-color: #715d8b;
+}
+.container-principal-fomulario .container-formulario form textarea:hover {
+  background-color: white;
+  color: rgb(202, 196, 196);
+  border-color: #715d8b;
+}
+.container-principal-fomulario .container-formulario form textarea:focus {
+  box-shadow: 0 0 0 0.1rem #715d8b;
+  border-color: #715d8b;
+}
+
+.form-control:hover {
+  background-color: white;
+  color: black;
+  border-color: #715d8b;
+}
+.form-control:hover:focus {
+  box-shadow: 0 0 0 0.1rem #715d8b;
+}
+
+button[type=submit] {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #715d8b;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+button[type=submit]:hover {
+  background-color: #3b0c79;
 }/*# sourceMappingURL=style2.css.map */
