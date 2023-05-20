@@ -6,12 +6,11 @@
         background:$color-rosa-palido;
         display: flex;
         font-family: "Roboto", sans-serif;
-        padding: 7rem;
+        padding: 3rem;
         margin: 0;
         margin-bottom: 0;
         align-items: flex-start;
         align-content: center;
-        width: min-content;
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -78,8 +77,20 @@
       }
       p {
         font-family: 'Roboto', sans-serif;
-        font-size: 12px;
+        font-size: 14px;
       }
+      .container-text-nosotros {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 0;
+        padding: 1rem;
+        padding-top: 8rem;
+        flex-direction: column;
+    }
 
       .container-segundo-text-nosotros {
         display: flex;

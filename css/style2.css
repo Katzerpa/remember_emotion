@@ -859,13 +859,11 @@ button[type=submit]:hover {
     background: rgba(243, 207, 243, 0.7);
     display: flex;
     font-family: "Roboto", sans-serif;
-    padding: 7rem;
+    padding: 3rem;
     margin: 0;
     margin-bottom: 0;
     align-items: flex-start;
     align-content: center;
-    width: -moz-min-content;
-    width: min-content;
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -914,7 +912,31 @@ button[type=submit]:hover {
   }
   p {
     font-family: "Roboto", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .container-text-nosotros {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 1rem;
+    padding-top: 8rem;
+    flex-direction: column;
+  }
+  .container-segundo-text-nosotros {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 100;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 700px) {
