@@ -564,6 +564,7 @@ h6 {
 .container-servicios .cards-servicios .card-fotografos h6 {
   text-align: center;
   margin-bottom: 0;
+  color: #c76ea9;
 }
 .container-servicios .cards-servicios .card-fotografos img {
   width: 100%;
@@ -574,9 +575,8 @@ h6 {
 .container-servicios .cards-servicios .card-fotografos p {
   text-align: justify;
   align-items: center center;
-  margin: 1rem 1rem;
+  margin: 0.5rem 0.5rem;
   padding: auto;
-  width: 90%;
 }
 .container-servicios .cards-servicios .card-fotografos a {
   text-align: center;
