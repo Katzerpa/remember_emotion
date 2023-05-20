@@ -96,14 +96,52 @@
                     border-color: $color-violeta-pastel;
                 }
             }
+            button {
+                padding: 1rem;
+                border: unset;
+                border-radius: 4px;
+                color:$color-blanco;
+                z-index: 1;
+                background:  $color-violeta-pastel;
+                position: relative;
+                cursor: pointer;
+                font-weight: 500;
+                -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+                box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+                transition: all 250ms;
+                overflow: hidden;
+                width: 100%;
+               }
+               
+               button::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 0;
+                border-radius: 4px;
+                background-color:$color-rosa-ligero-primario;;
+                z-index: -1;
+                -webkit-box-shadow: 4px 8px 19px -3px $color-rosa-ligero-primario;
+                box-shadow: 4px 8px 19px -3px $color-rosa-ligero-primario;
+                transition: all 250ms
+               }
+               
+               button:hover {
+                color:$color-blanco;
+               }
+               
+               button:hover::before {
+                width: 100%;
+               }
+          
 
         }
 
     }
-
-}
-
-
+   
+    
 .form-control:hover {
     background-color:$color-blanco;
     color: black;
@@ -111,25 +149,9 @@
     &:focus{
         box-shadow: 0 0 0 .10rem $color-violeta-pastel;
     }
-  
-  }
-  
-  button[type="submit"] {
-    padding: 1rem;
-    margin-bottom: 2rem;
-    background-color: $color-violeta-pastel;
-    color:$color-blanco;
-    border: 0;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    transition-property: background-color;
-    transition-duration:0.5s;
+     
+  }  
 
-    &:hover{
-        background-color: $color-rosa-ligero-primario;
-        
-    }
-  }
-  
+}
+
+   

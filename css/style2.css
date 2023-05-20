@@ -206,7 +206,6 @@ footer .copy-right {
   justify-content: right;
   text-decoration: none;
   margin: 1rem;
-  width: 18%;
 }
 .container-text-conocenos .titulo-primer-parrafo-home h3, .container-text-conocenos .titulo-primer-parrafo-home h2 {
   margin-bottom: 0;
@@ -215,7 +214,7 @@ footer .copy-right {
   text-align: justify;
   text-decoration: none;
   margin: 1rem;
-  width: 45%;
+  padding: 1.25rem;
 }
 
 .titulo-galeria-home {
@@ -616,16 +615,14 @@ footer .copy-right {
   margin: 0 auto;
   margin-bottom: 0;
   padding: 1rem;
-  width: 70%;
+  width: 90%;
   min-height: 30vh;
-  padding-top: 8rem;
   flex-direction: column;
 }
 .container-text-nosotros .primer-parrafo-nosotros {
   text-align: justify;
   text-decoration: none;
   padding: 1rem;
-  width: 100%;
 }
 
 .accordion-button.collapsed::after {
@@ -664,6 +661,13 @@ button.panelsStayOpen-collapseOne {
   align-items: center;
   margin: 0 auto;
   width: 90%;
+}
+.container-segundo-text-nosotros .titulo-segundo-parrafo-nosotros {
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  padding: 1rem;
+  margin: auto;
 }
 .container-segundo-text-nosotros .segundo-parrafo-nosotros {
   text-align: justify;
@@ -854,25 +858,7 @@ button[type=submit]:hover {
   background-color: #c76ea9;
 }
 
-@media (min-width: 0px) and (max-width: 991.98px) {
-  .container-text-conocenos {
-    background: rgba(243, 207, 243, 0.7);
-    display: flex;
-    font-family: "Roboto", sans-serif;
-    padding: 3rem;
-    margin: 0;
-    margin-bottom: 0;
-    align-items: flex-start;
-    align-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .container-text-conocenos .primer-parrafo-home {
-    text-align: justify;
-    text-decoration: none;
-    margin: 0;
-    width: 100%;
-  }
+@media (min-width: 0px) and (max-width: 992px) {
   .container-principal-galeria-home {
     grid-template-areas: "baby baby baby baby" "boda boda boda boda" "boda boda boda boda" "bautizo bautizo bautizo bautizo" "cumpleanos cumpleanos cumpleanos cumpleanos" "cumpleanos cumpleanos cumpleanos cumpleanos";
     gap: 1rem;
@@ -914,6 +900,9 @@ button[type=submit]:hover {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
   }
+  .titulo-galeria-home {
+    font-size: 32px;
+  }
   .container-text-nosotros {
     display: flex;
     justify-content: space-between;
@@ -929,17 +918,15 @@ button[type=submit]:hover {
   .container-segundo-text-nosotros {
     display: flex;
     font-family: "Roboto", sans-serif;
-    font-size: 100%;
-    padding: 2rem;
+    padding: 1;
     margin: 0 auto;
-    width: 100;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .modal .modal-content {
     width: 90%;
   }
@@ -954,7 +941,25 @@ button[type=submit]:hover {
     transition: 0.3s;
   }
 }
-@media (min-width: 0px) and (max-width: 1000px) {
+@media (min-width: 0px) and (max-width: 1200px) {
+  .container-text-conocenos {
+    background: rgba(243, 207, 243, 0.7);
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    padding: 3rem;
+    margin: 0;
+    margin-bottom: 0;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container-text-conocenos .primer-parrafo-home {
+    text-align: justify;
+    text-decoration: none;
+    margin: 0;
+    width: 100%;
+  }
   .cards-servicios {
     flex-direction: column;
   }
