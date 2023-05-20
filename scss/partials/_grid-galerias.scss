@@ -73,7 +73,7 @@
     height: 100%;
     overflow: auto;
     background-color: $color-modal-full;
-    background-color: ($color-modal-full, 0.9);
+    background-color: $color-modal-opacidad;
 
     .modal-content {
         margin: auto;

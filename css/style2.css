@@ -190,6 +190,10 @@ footer .copy-right {
      object-fit: cover;
 }
 
+h6 {
+  color: #fff;
+}
+
 .container-text-conocenos {
   background: rgba(243, 207, 243, 0.7);
   display: flex;
@@ -473,7 +477,7 @@ footer .copy-right {
   height: 100%;
   overflow: auto;
   background-color: rgb(219, 163, 221);
-  background-color: rgb(219, 163, 221), 0.9;
+  background-color: rgba(219, 163, 221, 0.9);
 }
 .modal .modal-content {
   margin: auto;
@@ -831,31 +835,47 @@ button.panelsStayOpen-collapseOne {
   box-shadow: 0 0 0 0.1rem #715d8b;
   border-color: #715d8b;
 }
-
-.form-control:hover {
+.container-principal-fomulario .container-formulario form button {
+  padding: 1rem;
+  border: unset;
+  border-radius: 4px;
+  color: #fff;
+  z-index: 1;
+  background: #715d8b;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  width: 100%;
+}
+.container-principal-fomulario .container-formulario form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 4px;
+  background-color: #c76ea9;
+  z-index: -1;
+  box-shadow: 4px 8px 19px -3px #c76ea9;
+  transition: all 250ms;
+}
+.container-principal-fomulario .container-formulario form button:hover {
+  color: #fff;
+}
+.container-principal-fomulario .container-formulario form button:hover::before {
+  width: 100%;
+}
+.container-principal-fomulario .form-control:hover {
   background-color: #fff;
   color: black;
   border-color: #715d8b;
 }
-.form-control:hover:focus {
+.container-principal-fomulario .form-control:hover:focus {
   box-shadow: 0 0 0 0.1rem #715d8b;
-}
-
-button[type=submit] {
-  padding: 1rem;
-  margin-bottom: 2rem;
-  background-color: #715d8b;
-  color: #fff;
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  width: 100%;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-button[type=submit]:hover {
-  background-color: #c76ea9;
 }
 
 @media (min-width: 0px) and (max-width: 992px) {
